@@ -15,7 +15,7 @@ int main() {
     printf("Enter the sequence for LFSR 1");
     for(n=0;n<4;n++)
     {
-        scanf("%d",&a[n]);
+        scanf("%d",&a[n]);                          // Populating the Linear feedback shift registers through user input
     }
     printf("Enter the sequence for LFSR 2");
     for(n=0;n<4;n++)
@@ -34,7 +34,7 @@ int main() {
     {
         k=(a[0]^a[3]);
         d[i]=a[3];
-        for(b=2;b>=0;b--)
+        for(b=2;b>=0;b--)                   // Geffe generator algorithm
         {
             a[b+1]=a[b];
         }
